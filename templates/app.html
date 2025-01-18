@@ -9,7 +9,9 @@
         <link rel="stylesheet" href="../static/css/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
         <style>
-
+            #detect-url {
+                width: 500px;
+            }
         </style>
 
         <!--header scripts-->
@@ -41,16 +43,16 @@
             </div>
 
             <!--detect-->
-            <div id="about" class="text-block">
+            <div id="detect" class="text-block">
                 <h2>Detect</h2>
-                <input class="text-entry" type="text" placeholder="Enter URL">
-                <div class="button">Scan for Vulnerabilities</div>
+                <input id="detect-url" class="text-entry" type="text" placeholder="Enter URL">
+                <div id="detect-btn" class="button">Scan for Vulnerabilities</div>
             </div>
 
-            <!--detect-->
-            <div id="about" class="text-block">
+            <!--detected-->
+            <div id="detected" class="text-block">
                 <h2>Detected Vulnerabilities</h2>
-                <p>
+                <p id="detected-status">
                     Scanning... (x%)
                 </p>
                 <table>
@@ -105,6 +107,6 @@ insert_code();
         </div>
 
         <!--scripts-->
-        <script src=""></script>
+        <script src="../static/src/app.js"></script>
     </body>
 </html>
