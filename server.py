@@ -11,4 +11,5 @@ def site_index():
 def site_app():
     return flask.render_template("app.html")
 
-app.run(port=3000)
+if __name__ == "__main__":
+    app.run(port=3000)
