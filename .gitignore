@@ -9,6 +9,10 @@ bin/
 # files
 .DS_Store
 compile_commands.json
+
+# chrome driver
 chrome-win64
+chromedriver-win64
+chromedriver-win64.zip
 
 #extensions
