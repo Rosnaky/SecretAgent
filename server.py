@@ -1,3 +1,4 @@
+import subprocess
 import flask
 
 app = flask.Flask(__name__)
@@ -16,6 +17,14 @@ def submit():
     data = flask.request.json
     input_text = data.get("input", "")
     print(f"Received input: {input_text}")
+
+    process = subprocess.Popen(
+        ["python", "driver.py"],
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        text=True
+    )
+
     return flask.jsonify({"message": "Input received!", "input": input_text})
 
 
