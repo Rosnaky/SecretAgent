@@ -1,0 +1,1693 @@
+{
+    "url": "http://localhost:3000/",
+    "method": "GET",
+    "headers": {
+        "Upgrade-Insecure-Requests": "1",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css",
+    "method": "GET",
+    "headers": {
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js",
+    "method": "GET",
+    "headers": {
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js",
+    "method": "GET",
+    "headers": {
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/runtime.js",
+    "method": "GET",
+    "headers": {
+        "Origin": "http://localhost:3000",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/polyfills.js",
+    "method": "GET",
+    "headers": {
+        "Origin": "http://localhost:3000",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/vendor.js",
+    "method": "GET",
+    "headers": {
+        "Origin": "http://localhost:3000",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/main.js",
+    "method": "GET",
+    "headers": {
+        "Origin": "http://localhost:3000",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css",
+    "method": "GET",
+    "headers": {
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"
+    },
+    "post_data": ""
+}
+
+{
+    "url": "https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js",
+    "method": "GET",
+    "headers": {
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"
+    },
+    "post_data": ""
+}
+
+{
+    "url": "https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js",
+    "method": "GET",
+    "headers": {
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/styles.css",
+    "method": "GET",
+    "headers": {
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/rest/admin/application-configuration",
+    "method": "GET",
+    "headers": {
+        "Accept": "application/json, text/plain, */*",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/assets/i18n/en.json",
+    "method": "GET",
+    "headers": {
+        "Accept": "application/json, text/plain, */*",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/socket.io/?EIO=4&transport=polling&t=PHvyjl8",
+    "method": "GET",
+    "headers": {
+        "Accept": "*/*",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/rest/admin/application-version",
+    "method": "GET",
+    "headers": {
+        "Accept": "application/json, text/plain, */*",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/rest/admin/application-configuration",
+    "method": "GET",
+    "headers": {
+        "Accept": "application/json, text/plain, */*",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/api/Challenges/?name=Score%20Board",
+    "method": "GET",
+    "headers": {
+        "Accept": "application/json, text/plain, */*",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/rest/languages",
+    "method": "GET",
+    "headers": {
+        "Accept": "application/json, text/plain, */*",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/rest/admin/application-version",
+    "method": "GET",
+    "headers": {
+        "Accept": "application/json, text/plain, */*",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/rest/admin/application-configuration",
+    "method": "GET",
+    "headers": {
+        "Accept": "application/json, text/plain, */*",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/api/Challenges/?name=Score%20Board",
+    "method": "GET",
+    "headers": {
+        "Accept": "application/json, text/plain, */*",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/rest/admin/application-configuration",
+    "method": "GET",
+    "headers": {
+        "Accept": "application/json, text/plain, */*",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/rest/admin/application-configuration",
+    "method": "GET",
+    "headers": {
+        "Accept": "application/json, text/plain, */*",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/api/Quantitys/",
+    "method": "GET",
+    "headers": {
+        "Accept": "application/json, text/plain, */*",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/rest/products/search?q=",
+    "method": "GET",
+    "headers": {
+        "Accept": "application/json, text/plain, */*",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/assets/public/images/JuiceShop_Logo.png",
+    "method": "GET",
+    "headers": {
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/socket.io/?EIO=4&transport=polling&t=PHvyjn6&sid=_7fHHk-_7CLnR4z0AAAk",
+    "method": "POST",
+    "headers": {
+        "Accept": "*/*",
+        "Content-type": "text/plain;charset=UTF-8",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": "40"
+}
+
+{
+    "url": "http://localhost:3000/socket.io/?EIO=4&transport=polling&t=PHvyjn8&sid=_7fHHk-_7CLnR4z0AAAk",
+    "method": "GET",
+    "headers": {
+        "Accept": "*/*",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/MaterialIcons-Regular.woff2",
+    "method": "GET",
+    "headers": {
+        "Origin": "http://localhost:3000",
+        "Referer": "http://localhost:3000/styles.css",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/rest/admin/application-configuration",
+    "method": "GET",
+    "headers": {
+        "Accept": "application/json, text/plain, */*",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/socket.io/?EIO=4&transport=polling&t=PHvyjrO&sid=_7fHHk-_7CLnR4z0AAAk",
+    "method": "GET",
+    "headers": {
+        "Accept": "*/*",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/assets/public/images/products/apple_juice.jpg",
+    "method": "GET",
+    "headers": {
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/assets/public/images/products/apple_pressings.jpg",
+    "method": "GET",
+    "headers": {
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/assets/public/images/products/banana_juice.jpg",
+    "method": "GET",
+    "headers": {
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/assets/public/images/products/artwork2.jpg",
+    "method": "GET",
+    "headers": {
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/assets/public/images/products/carrot_juice.jpeg",
+    "method": "GET",
+    "headers": {
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/assets/public/images/products/user_day_ticket.png",
+    "method": "GET",
+    "headers": {
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/assets/public/images/products/eggfruit_juice.jpg",
+    "method": "GET",
+    "headers": {
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/assets/public/images/products/fruit_press.jpg",
+    "method": "GET",
+    "headers": {
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/assets/public/images/products/green_smoothie.jpg",
+    "method": "GET",
+    "headers": {
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/assets/public/images/products/permafrost.jpg",
+    "method": "GET",
+    "headers": {
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/assets/public/images/products/lemon_juice.jpg",
+    "method": "GET",
+    "headers": {
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/assets/public/images/products/melon_bike.jpeg",
+    "method": "GET",
+    "headers": {
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/assets/public/favicon_js.ico",
+    "method": "GET",
+    "headers": {
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/",
+    "method": "GET",
+    "headers": {
+        "Upgrade-Insecure-Requests": "1",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css",
+    "method": "GET",
+    "headers": {
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js",
+    "method": "GET",
+    "headers": {
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js",
+    "method": "GET",
+    "headers": {
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/runtime.js",
+    "method": "GET",
+    "headers": {
+        "If-Modified-Since": "Sat, 18 Jan 2025 12:33:49 GMT",
+        "If-None-Match": "W/\"ce1-1947967bead\"",
+        "Origin": "http://localhost:3000",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/polyfills.js",
+    "method": "GET",
+    "headers": {
+        "If-Modified-Since": "Sat, 18 Jan 2025 12:33:49 GMT",
+        "If-None-Match": "W/\"d507-1947967bead\"",
+        "Origin": "http://localhost:3000",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/vendor.js",
+    "method": "GET",
+    "headers": {
+        "If-Modified-Since": "Sat, 18 Jan 2025 12:33:49 GMT",
+        "If-None-Match": "W/\"150bda-1947967bead\"",
+        "Origin": "http://localhost:3000",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/main.js",
+    "method": "GET",
+    "headers": {
+        "If-Modified-Since": "Sat, 18 Jan 2025 12:33:49 GMT",
+        "If-None-Match": "W/\"6f6c9-1947967bead\"",
+        "Origin": "http://localhost:3000",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css",
+    "method": "GET",
+    "headers": {
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"
+    },
+    "post_data": ""
+}
+
+{
+    "url": "https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js",
+    "method": "GET",
+    "headers": {
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"
+    },
+    "post_data": ""
+}
+
+{
+    "url": "https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js",
+    "method": "GET",
+    "headers": {
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/styles.css",
+    "method": "GET",
+    "headers": {
+        "If-Modified-Since": "Sat, 18 Jan 2025 12:33:49 GMT",
+        "If-None-Match": "W/\"993ce-1947967bead\"",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/MaterialIcons-Regular.woff2",
+    "method": "GET",
+    "headers": {
+        "Referer": ""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/rest/admin/application-configuration",
+    "method": "GET",
+    "headers": {
+        "Accept": "application/json, text/plain, */*",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/assets/i18n/en.json",
+    "method": "GET",
+    "headers": {
+        "Accept": "application/json, text/plain, */*",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/socket.io/?EIO=4&transport=polling&t=PHvymq2",
+    "method": "GET",
+    "headers": {
+        "Accept": "*/*",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/rest/admin/application-version",
+    "method": "GET",
+    "headers": {
+        "Accept": "application/json, text/plain, */*",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/rest/admin/application-configuration",
+    "method": "GET",
+    "headers": {
+        "Accept": "application/json, text/plain, */*",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/api/Challenges/?name=Score%20Board",
+    "method": "GET",
+    "headers": {
+        "Accept": "application/json, text/plain, */*",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/rest/languages",
+    "method": "GET",
+    "headers": {
+        "Accept": "application/json, text/plain, */*",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/rest/admin/application-version",
+    "method": "GET",
+    "headers": {
+        "Accept": "application/json, text/plain, */*",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/rest/admin/application-configuration",
+    "method": "GET",
+    "headers": {
+        "Accept": "application/json, text/plain, */*",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/api/Challenges/?name=Score%20Board",
+    "method": "GET",
+    "headers": {
+        "Accept": "application/json, text/plain, */*",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/rest/admin/application-configuration",
+    "method": "GET",
+    "headers": {
+        "Accept": "application/json, text/plain, */*",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/rest/admin/application-configuration",
+    "method": "GET",
+    "headers": {
+        "Accept": "application/json, text/plain, */*",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/assets/public/images/JuiceShop_Logo.png",
+    "method": "GET",
+    "headers": {
+        "If-Modified-Since": "Sat, 18 Jan 2025 12:33:54 GMT",
+        "If-None-Match": "W/\"12515-1947967d019\"",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/api/Quantitys/",
+    "method": "GET",
+    "headers": {
+        "Accept": "application/json, text/plain, */*",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/rest/products/search?q=",
+    "method": "GET",
+    "headers": {
+        "Accept": "application/json, text/plain, */*",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/socket.io/?EIO=4&transport=polling&t=PHvymsP&sid=Udf0IlOgxV30BOy6AAAm",
+    "method": "POST",
+    "headers": {
+        "Accept": "*/*",
+        "Content-type": "text/plain;charset=UTF-8",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": "40"
+}
+
+{
+    "url": "http://localhost:3000/socket.io/?EIO=4&transport=polling&t=PHvymsR&sid=Udf0IlOgxV30BOy6AAAm",
+    "method": "GET",
+    "headers": {
+        "Accept": "*/*",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/rest/admin/application-configuration",
+    "method": "GET",
+    "headers": {
+        "Accept": "application/json, text/plain, */*",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/socket.io/?EIO=4&transport=polling&t=PHvymtt&sid=Udf0IlOgxV30BOy6AAAm",
+    "method": "GET",
+    "headers": {
+        "Accept": "*/*",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/assets/public/favicon_js.ico",
+    "method": "GET",
+    "headers": {
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/assets/public/images/products/apple_juice.jpg",
+    "method": "GET",
+    "headers": {
+        "If-Modified-Since": "Sat, 18 Jan 2025 12:33:54 GMT",
+        "If-None-Match": "W/\"3bbb-1947967d023\"",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/assets/public/images/products/apple_pressings.jpg",
+    "method": "GET",
+    "headers": {
+        "If-Modified-Since": "Sat, 18 Jan 2025 12:33:54 GMT",
+        "If-None-Match": "W/\"71eb-1947967d023\"",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/assets/public/images/products/banana_juice.jpg",
+    "method": "GET",
+    "headers": {
+        "If-Modified-Since": "Sat, 18 Jan 2025 12:33:54 GMT",
+        "If-None-Match": "W/\"4d79-1947967d023\"",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/assets/public/images/products/artwork2.jpg",
+    "method": "GET",
+    "headers": {
+        "If-Modified-Since": "Sat, 18 Jan 2025 12:33:54 GMT",
+        "If-None-Match": "W/\"8c26-1947967d023\"",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/assets/public/images/products/carrot_juice.jpeg",
+    "method": "GET",
+    "headers": {
+        "If-Modified-Since": "Sat, 18 Jan 2025 12:33:54 GMT",
+        "If-None-Match": "W/\"4a39-1947967d023\"",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/assets/public/images/products/user_day_ticket.png",
+    "method": "GET",
+    "headers": {
+        "If-Modified-Since": "Sat, 18 Jan 2025 12:33:54 GMT",
+        "If-None-Match": "W/\"64915-1947967d02d\"",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/assets/public/images/products/eggfruit_juice.jpg",
+    "method": "GET",
+    "headers": {
+        "If-Modified-Since": "Sat, 18 Jan 2025 12:33:54 GMT",
+        "If-None-Match": "W/\"3ae0-1947967d023\"",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/assets/public/images/products/fruit_press.jpg",
+    "method": "GET",
+    "headers": {
+        "If-Modified-Since": "Sat, 18 Jan 2025 12:33:54 GMT",
+        "If-None-Match": "W/\"42b8-1947967d023\"",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/assets/public/images/products/green_smoothie.jpg",
+    "method": "GET",
+    "headers": {
+        "If-Modified-Since": "Sat, 18 Jan 2025 12:33:54 GMT",
+        "If-None-Match": "W/\"3e26-1947967d023\"",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/assets/public/images/products/permafrost.jpg",
+    "method": "GET",
+    "headers": {
+        "If-Modified-Since": "Sat, 18 Jan 2025 12:33:54 GMT",
+        "If-None-Match": "W/\"16dc9-1947967d023\"",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/assets/public/images/products/lemon_juice.jpg",
+    "method": "GET",
+    "headers": {
+        "If-Modified-Since": "Sat, 18 Jan 2025 12:33:54 GMT",
+        "If-None-Match": "W/\"428e-1947967d023\"",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/assets/public/images/products/melon_bike.jpeg",
+    "method": "GET",
+    "headers": {
+        "If-Modified-Since": "Sat, 18 Jan 2025 12:33:54 GMT",
+        "If-None-Match": "W/\"5414-1947967d023\"",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/",
+    "method": "GET",
+    "headers": {
+        "Upgrade-Insecure-Requests": "1",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css",
+    "method": "GET",
+    "headers": {
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js",
+    "method": "GET",
+    "headers": {
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js",
+    "method": "GET",
+    "headers": {
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/runtime.js",
+    "method": "GET",
+    "headers": {
+        "If-Modified-Since": "Sat, 18 Jan 2025 12:33:49 GMT",
+        "If-None-Match": "W/\"ce1-1947967bead\"",
+        "Origin": "http://localhost:3000",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/polyfills.js",
+    "method": "GET",
+    "headers": {
+        "If-Modified-Since": "Sat, 18 Jan 2025 12:33:49 GMT",
+        "If-None-Match": "W/\"d507-1947967bead\"",
+        "Origin": "http://localhost:3000",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/vendor.js",
+    "method": "GET",
+    "headers": {
+        "If-Modified-Since": "Sat, 18 Jan 2025 12:33:49 GMT",
+        "If-None-Match": "W/\"150bda-1947967bead\"",
+        "Origin": "http://localhost:3000",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/main.js",
+    "method": "GET",
+    "headers": {
+        "If-Modified-Since": "Sat, 18 Jan 2025 12:33:49 GMT",
+        "If-None-Match": "W/\"6f6c9-1947967bead\"",
+        "Origin": "http://localhost:3000",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css",
+    "method": "GET",
+    "headers": {
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"
+    },
+    "post_data": ""
+}
+
+{
+    "url": "https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js",
+    "method": "GET",
+    "headers": {
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"
+    },
+    "post_data": ""
+}
+
+{
+    "url": "https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js",
+    "method": "GET",
+    "headers": {
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/styles.css",
+    "method": "GET",
+    "headers": {
+        "If-Modified-Since": "Sat, 18 Jan 2025 12:33:49 GMT",
+        "If-None-Match": "W/\"993ce-1947967bead\"",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/MaterialIcons-Regular.woff2",
+    "method": "GET",
+    "headers": {
+        "Referer": ""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/rest/admin/application-configuration",
+    "method": "GET",
+    "headers": {
+        "Accept": "application/json, text/plain, */*",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/assets/i18n/en.json",
+    "method": "GET",
+    "headers": {
+        "Accept": "application/json, text/plain, */*",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/socket.io/?EIO=4&transport=polling&t=PHvyxow",
+    "method": "GET",
+    "headers": {
+        "Accept": "*/*",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/rest/admin/application-version",
+    "method": "GET",
+    "headers": {
+        "Accept": "application/json, text/plain, */*",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/rest/admin/application-configuration",
+    "method": "GET",
+    "headers": {
+        "Accept": "application/json, text/plain, */*",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/api/Challenges/?name=Score%20Board",
+    "method": "GET",
+    "headers": {
+        "Accept": "application/json, text/plain, */*",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/rest/languages",
+    "method": "GET",
+    "headers": {
+        "Accept": "application/json, text/plain, */*",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/rest/admin/application-version",
+    "method": "GET",
+    "headers": {
+        "Accept": "application/json, text/plain, */*",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/rest/admin/application-configuration",
+    "method": "GET",
+    "headers": {
+        "Accept": "application/json, text/plain, */*",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/api/Challenges/?name=Score%20Board",
+    "method": "GET",
+    "headers": {
+        "Accept": "application/json, text/plain, */*",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/rest/admin/application-configuration",
+    "method": "GET",
+    "headers": {
+        "Accept": "application/json, text/plain, */*",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/rest/admin/application-configuration",
+    "method": "GET",
+    "headers": {
+        "Accept": "application/json, text/plain, */*",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/assets/public/images/JuiceShop_Logo.png",
+    "method": "GET",
+    "headers": {
+        "If-Modified-Since": "Sat, 18 Jan 2025 12:33:54 GMT",
+        "If-None-Match": "W/\"12515-1947967d019\"",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/api/Quantitys/",
+    "method": "GET",
+    "headers": {
+        "Accept": "application/json, text/plain, */*",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/rest/products/search?q=",
+    "method": "GET",
+    "headers": {
+        "Accept": "application/json, text/plain, */*",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/socket.io/?EIO=4&transport=polling&t=PHvyxqb&sid=mdv0HCHS6vho60vKAAAo",
+    "method": "POST",
+    "headers": {
+        "Accept": "*/*",
+        "Content-type": "text/plain;charset=UTF-8",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": "40"
+}
+
+{
+    "url": "http://localhost:3000/socket.io/?EIO=4&transport=polling&t=PHvyxqe&sid=mdv0HCHS6vho60vKAAAo",
+    "method": "GET",
+    "headers": {
+        "Accept": "*/*",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/assets/public/favicon_js.ico",
+    "method": "GET",
+    "headers": {
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/socket.io/?EIO=4&transport=polling&t=PHvyxsB&sid=mdv0HCHS6vho60vKAAAo",
+    "method": "GET",
+    "headers": {
+        "Accept": "*/*",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/rest/admin/application-configuration",
+    "method": "GET",
+    "headers": {
+        "Accept": "application/json, text/plain, */*",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/assets/public/images/products/apple_juice.jpg",
+    "method": "GET",
+    "headers": {
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/assets/public/images/products/apple_pressings.jpg",
+    "method": "GET",
+    "headers": {
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
+
+{
+    "url": "http://localhost:3000/assets/public/images/products/banana_juice.jpg",
+    "method": "GET",
+    "headers": {
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": ""
+}
