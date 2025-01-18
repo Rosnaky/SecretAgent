@@ -1,0 +1,11 @@
+# folders
+.cache/
+.vscode/
+bin/
+*/bin/
+
+# files
+.DS_Store
+compile_commands.json
+
+#extensions
