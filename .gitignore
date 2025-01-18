@@ -15,4 +15,5 @@ chrome-win64
 chromedriver-win64
 chromedriver-win64.zip
 
+.env
 #extensions
