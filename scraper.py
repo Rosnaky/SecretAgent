@@ -1,3 +1,5 @@
+from multiprocessing import Process
+from threading import Thread
 import time
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
@@ -45,27 +47,35 @@ def process_browser_logs_for_network_events(logs):
 def closeConnection():
     driver.quit()
 
+def printNetworkLogs(filename):
+    try:
+        with open(filename, 'w') as f:
+            while True:
+                logs = driver.get_log("performance")
+                events = process_browser_logs_for_network_events(logs)
+                for event in events:
+                    try:
+                        if ("N/A" == event["url"]):
+                            continue
+
+                        f.write(json.dumps(event, indent=4))
+                        f.write("\n\n")
+                    except Exception as e:
+                        print(f"Error writing log: {e}")
+    finally:
+        closeConnection()
+
+
 # Set up the driver
 setUpDriver()
 
 # Open the page
 listenToPage(url="http://localhost:3000/")
 
-try:
-    with open("network_outputs.txt", 'w') as f:
-        while True:
-            time.sleep(3)
-            logs = driver.get_log("performance")
-            events = process_browser_logs_for_network_events(logs)
-            for event in events:
-                try:
-                    if ("N/A" == event["url"]):
-                        continue
+while True:
+    s = time.time()
 
-                    f.write(json.dumps(event, indent=4))
-                    f.write("\n\n")
-                except Exception as e:
-                    print(f"Error writing log: {e}")
-            
-finally:
-    closeConnection()
+    if time.time()-s < 7:
+        time.sleep(0.2)
+
+    printNetworkLogs("./network_outputs.txt")
