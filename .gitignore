@@ -4,6 +4,7 @@
 .vscode/
 bin/
 */bin/
+.venv
 
 # files
 .DS_Store
