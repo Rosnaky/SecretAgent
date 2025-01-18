@@ -1,129 +1,32 @@
-import argparse
-from llama_index.core import VectorStoreIndex, Settings, StorageContext
-from llama_index.readers.web import SimpleWebPageReader
-from llama_index.vector_stores.lancedb import LanceDBVectorStore
-from llama_index.llms.databricks import Databricks
-from llama_index.embeddings.huggingface import HuggingFaceEmbedding
-from gen_image import load_models, generate_image, RESPONSE_TO_DIFFUSER_PROMPT
+from typing import List, Dict
+import cohere # type: ignore
 
+class CohereAPI:
+    def __init__(self, api_key: str, model: str = "command-r-plus-08-2024"):
+        self.client = cohere.ClientV2(api_key=api_key)
+        self.model = model
+        self.documents = []
 
-MODEL, STEPS = None, None
+    def set_documents(self, documents: List[Dict[str, str]]):
+        self.documents = [
+            {"data": {"title": doc["title"], "snippet": doc["snippet"]}}
+            for doc in documents
+        ]
+        
+    def add_document(self, title: str, snippet: str):
+        self.documents.append({"data": {"title": title, "snippet": snippet}})
+        
+    def pop_document(self):
+        self.documents.pop()
 
-
-def get_doc_from_url(url):
-    documents = SimpleWebPageReader(html_to_text=True).load_data([url])
-    return documents
-
-
-def get_doc_from_file(file_path):
-    with open(file_path, 'r', encoding='utf-8') as file:
-        text = file.read()
-    # Wrap the text in the appropriate document structure
-    return [{"text": text}]
-
-
-def build_RAG(
-    documents,
-    embed_model="mixedbread-ai/mxbai-embed-large-v1",
-    uri="~/tmp/security",
-    force_create_embeddings=False,
-    illustrate=True,
-    diffuser_model="sdxl",
-):
-    Settings.embed_model = HuggingFaceEmbedding(model_name=embed_model)
-    Settings.llm = Databricks(model="databricks-dbrx-instruct")
-    if illustrate:
-        print("Loading sdxl model")
-        model, steps = load_models(diffuser_model)
-        # This is a hack to trade off between speed and quality
-        steps = 1
-        print("Model loaded")
-
-    vector_store = LanceDBVectorStore(uri=uri)
-    storage_context = StorageContext.from_defaults(vector_store=vector_store)
-    index = VectorStoreIndex.from_documents(documents, storage_context=storage_context)
-    query_engine = index.as_chat_engine()
-
-    return query_engine, model, steps
-
-
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Build RAG system")
-    parser.add_argument(
-        "--url",
-        type=str,
-        default=None,
-        help="URL of the document",
-    )
-    parser.add_argument(
-        "--document",
-        type=str,
-        default=None,
-        help="Path to a local text document",
-    )
-    parser.add_argument(
-        "--embed_model",
-        type=str,
-        default="mixedbread-ai/mxbai-embed-large-v1",
-        help="Embedding model",
-    )
-    parser.add_argument(
-        "--uri",
-        type=str,
-        default="~/tmp/lancedb_security_12",
-        help="URI of the vector store",
-    )
-    parser.add_argument(
-        "--force_create_embeddings",
-        type=bool,
-        default=False,
-        help="Force create embeddings",
-    )
-    parser.add_argument(
-        "--diffuser_model",
-        type=str,
-        default="sdxl",
-        help="Model ID",
-    )
-    parser.add_argument(
-        "--illustrate",
-        type=bool,
-        default=True,
-        help="Annotate",
-    )
-    args = parser.parse_args()
-
-    # Check for document or URL
-    if args.document:
-        documents = get_doc_from_file(args.document)
-    elif args.url:
-        documents = get_doc_from_url(args.url)
-    else:
-        raise ValueError("You must provide either a --url or --document.")
-
-    # Hardcode model because no one should use sd
-    args.diffuser_model = "sdxl"
-
-    query_engine, model, steps = build_RAG(
-        documents,
-        args.embed_model,
-        args.uri,
-        args.force_create_embeddings,
-        args.illustrate,
-        args.diffuser_model,
-    )
-
-    print("Ask a question relevant to the given context:")
-    while True:
-        query = input()
-        response = query_engine.chat(query)
-        print(response)
-        print("\n Illustrating the response...:")
-        image = generate_image(
-            model,
-            steps,
-            Settings.llm.complete(
-                RESPONSE_TO_DIFFUSER_PROMPT.format(str(response.response))
-            ).text,
+    def send_prompt(self, prompt: str, max_tokens: int = 1024, temperature: float = 0.2) -> Dict[str, str]:
+        response = self.client.chat(
+            model=self.model,
+            documents=self.documents,
+            messages=[{"role": "user", "content": prompt}],
+            max_tokens=max_tokens,
+            temperature=temperature
         )
-        image.show()
+
+        return response.message.content[0].text
+        
