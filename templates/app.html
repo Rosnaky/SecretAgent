@@ -17,6 +17,31 @@
         <!--header scripts-->
     </head>
 
+    <script>
+        async function handleSubmit(event) {
+            console.log(event)
+          event.preventDefault(); // Prevent the form from reloading the page
+    
+          // Get the value of the input field
+          const inputField = document.getElementById("detect-url");
+          const inputValue = inputField.value;
+    
+          // Create the POST request
+          const response = await fetch("/submit", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json"
+            },
+            body: JSON.stringify({ input: inputValue })
+          });
+    
+          // Handle the response
+          const result = await response.json();
+          console.log("Server response:", result);
+          alert("Server response: " + JSON.stringify(result));
+        }
+      </script>
+
     <body>
         <!--global-->
         <div id="global">
@@ -45,8 +70,10 @@
             <!--detect-->
             <div id="detect" class="text-block">
                 <h2>Detect</h2>
-                <input id="detect-url" class="text-entry" type="text" placeholder="Enter URL">
-                <div id="detect-btn" class="button">Scan for Vulnerabilities</div>
+                <form onsubmit="handleSubmit(event)">
+                    <input id="detect-url" class="text-entry" type="text" placeholder="Enter URL">
+                    <button id="detect-btn" class="button" type="submit">Scan for Vulnerabilities</button>
+                </form>
             </div>
 
             <!--detected-->
@@ -107,6 +134,6 @@ insert_code();
         </div>
 
         <!--scripts-->
-        <script src="../static/src/app.js"></script>
+        <!-- <script src="../static/src/app.js"></script> -->
     </body>
 </html>
