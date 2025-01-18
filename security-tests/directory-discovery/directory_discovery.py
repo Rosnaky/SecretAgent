@@ -28,13 +28,13 @@ for path in file_paths:
     
     except WebDriverException as e:
         print(f"Error accessing {url}: {e}")
-        results.append((path, "Error"))
 
 driver.quit()
 
 with open('results.txt', 'w') as result_file:
-    result_file.write("Potential vulnerabilities\n:")
-    for path in results:
-        result_file.write(f"{path}\n")
+    if len(results) > 0:
+        result_file.write("Potential vulnerabilities\n:")
+        for path in results:
+            result_file.write(f"{path}\n")
 
 print("Testing completed. Results saved to 'results.txt'.")
