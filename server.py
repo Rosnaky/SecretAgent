@@ -11,5 +11,13 @@ def site_index():
 def site_app():
     return flask.render_template("app.html")
 
+@app.route("/submit", methods=["POST"])
+def submit():
+    data = flask.request.json
+    input_text = data.get("input", "")
+    print(f"Received input: {input_text}")
+    return flask.jsonify({"message": "Input received!", "input": input_text})
+
+
 if __name__ == "__main__":
-    app.run(port=3000)
+    app.run(port=3001)
