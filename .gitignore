@@ -9,5 +9,6 @@ bin/
 # files
 .DS_Store
 compile_commands.json
+chrome-win64
 
 #extensions
