@@ -44,7 +44,7 @@ def closeConnection():
 
 def printNetworkLogs(filename):
     setUpDriver()
-    listenToPage("http://localhost:3000")
+    listenToPage("http://localhost:4000")
     try:
         with open(filename, 'w') as f:
             while True:
