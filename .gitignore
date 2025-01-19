@@ -1,5 +1,5 @@
 # folders
-__pycache__/
+__pycache__
 .cache/
 .venv/
 .vscode/
