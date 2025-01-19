@@ -1,9 +1,23 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.options import Options
 import time
 
 def xss(base_url):
-    driver = webdriver.Firefox()
+    # driver = webdriver.Firefox()
+    chrome_driver_path = "chromedriver-win64\\chromedriver.exe"
+    
+    chrome_options = Options()
+    chrome_options.add_argument("--auto-open-devtools-for-tabs")  
+
+    # Enable performance logging
+    chrome_options.set_capability("goog:loggingPrefs", {"performance": "ALL"})
+    service = Service(chrome_driver_path)
+    
+    driver = webdriver.Chrome(service=service, options=chrome_options)
+
 
     with open('utils/xss.txt', 'r') as file:
         statements = [line.strip() for line in file.readlines()]
@@ -42,4 +56,4 @@ def xss(base_url):
             for statement in results:
                 result_file.write(f"{statement}\n")
 
-xss("http://localhost:3000")
+# xss("http://localhost:3000")
