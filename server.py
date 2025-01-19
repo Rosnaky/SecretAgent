@@ -18,8 +18,8 @@ def submit():
     input_text = data.get("input", "")
     print(f"Received input: {input_text}")
 
-    process = subprocess.Popen(
-        ["python", "driver.py"],
+    process = subprocess.run(
+        ["python", "driver.py", input_text],
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE,
         text=True
