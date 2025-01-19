@@ -1,2 +1,1 @@
-Sensitive Data Found password http://localhost:4000/rest/user/login
-Sensitive Data Found card http://localhost:4000/api/Cards/
+SQL Injection: (http://localhost:4000/rest/user/login, POST, {"email":"daskdas' OR 1=1--","password":"dsaddsadsa"})

@@ -48,7 +48,8 @@ def listenToNetwork(network_fname, client_code_fname, url, cohere_api):
 
         # if time.time()-s < 10:
         #     time.sleep(0.2)
-        Event().wait(10)
+        # Event().wait(7)
+        time.sleep(2)
 
         with open(client_code_filename, "w", encoding="charmap", errors="replace") as f:
             f.write(str(scraper.getClientCode()))
@@ -57,11 +58,39 @@ def listenToNetwork(network_fname, client_code_fname, url, cohere_api):
 
         llmParseNetworkRequests(cohere_api)
 
+        findSolutions(cohere_api)
+
         # time.sleep(3)
 
         # llmParseClientCode(cohere_api)
 
         # llm_thread = Thread
+
+def findSolutions(cohere_api: CohereAPI):
+    with open("results/network_vulnerabilities.txt", 'r') as f1:
+        c1 = f1.read()
+    with open("results/results_brute_force.txt", 'r') as f2:
+        c2 = f2.read()
+    with open("results/results_directory_discovery.txt", 'r') as f3:
+        c3 = f3.read()
+    with open("results/results_sql_injection.txt", 'r') as f4:
+        c4 = f4.read()
+    with open("results/results_xss.txt", 'r') as f5:
+        c5 = f5.read()
+
+    cohere_api.set_documents([
+                                {"title": "network_vulnerabilities", "snippet": c1},
+                                {"title": "brute_force", "snippet": c2},
+                                {"title": "directory_discovery", "snippet": c3},
+                                {"title": "sql_injection", "snippet": c4},
+                                {"title": "xss", "snippet": c5},
+                                # {"title": "vulnerable_requests_examples", "snippet": vulnerable_requests_examples},
+                              ])
+    prompt = f'Provide a list of remedies for these vulnerabilities. KEEP IT SHORT AND CONCISE. IF YOU HAVE NO SUGGESTIONS SAY NO CURRENT RECOMMENDATIONS VULNERABILITIES FOR FIXES'
+    response = cohere_api.send_prompt(prompt=prompt)
+
+    with open("results/remedies.txt", "w") as f:
+        f.write(response)
 
 def populateNetworkRAG(cohere_api: CohereAPI):
     with open("results/network_outputs.txt", 'r') as f:
@@ -77,14 +106,13 @@ def populateNetworkRAG(cohere_api: CohereAPI):
 
 def llmParseNetworkRequests(cohere_api: CohereAPI):
     populateNetworkRAG(cohere_api)
-    prompt = f"Generate a list of vulnerabilities by assessing the network requests. RETURN A SHORT DESCRIPTION OF THE VULNERABILITY AND THE RESPECTIVE NETWORK REQUEST IN THE FOLLOWING FORMAT: Sensitive Data Found (Password/CardNum/Social Security Number)=<info>. Give a list of vulnerabilities. MAKE SURE TO IDENTIFY VULNERABLE DATA ESPECIALLY PASSWORDS AND CARDS. LOOK THROUGH ALL OF THE REQUESTS. IF YOU ENCOUNTER ONE, DO NOT FORGET IT"
+    prompt = f"Generate a list of vulnerabilities by assessing the network requests. RETURN A SHORT DESCRIPTION OF THE VULNERABILITY AND THE RESPECTIVE NETWORK REQUEST IN ONE LINE. Example: Password Vulnerable: (username: dhisah, password: dskad)  Give a list of vulnerabilities. MAKE SURE TO IDENTIFY VULNERABLE DATA ESPECIALLY PASSWORDS AND CARDS. LOOK THROUGH ALL OF THE REQUESTS. IF YOU ENCOUNTER ONE, DO NOT FORGET IT. DO NOT OUTPUT ANYTHING OTHER THAN VULNERABILITIES"
     # return
     response = cohere_api.send_prompt(prompt=prompt)
 
     with open("results/network_vulnerabilities.txt", "w") as f:
         f.write(str(response))
 
-def populateClientCodeRAG(cohere_api: CohereAPI):
     with open("results/client_code.txt", 'r') as f:
         client_code = f.read()
     with open("utils/client_code.txt", 'r') as f:
@@ -92,7 +120,7 @@ def populateClientCodeRAG(cohere_api: CohereAPI):
         
     cohere_api.set_documents([
                                 {"title": "client_code", "snippet": client_code},
-                                {"title": "vulnerable_client_code_examples", "snippet": vulnerable_client_code_examples},
+                                # {"title": "vulnerable_client_code_examples", "snippet": vulnerable_client_code_examples},
                               ])
 
 def llmParseClientCode(cohere_api: CohereAPI):
@@ -109,8 +137,8 @@ def llmParseClientCode(cohere_api: CohereAPI):
 # cohere_api = init_cohere(API_KEY)
 # llmParse(cohere_api)
 
-# url = getUrl()
-url = "http://localhost:4000"
+url = getUrl()
+# url = "http://localhost:4000"
 
 if (url != "Invalid link"):
     cohere_api = init_cohere(API_KEY)
