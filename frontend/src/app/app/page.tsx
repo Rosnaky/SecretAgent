@@ -1,6 +1,11 @@
+"use client";
+
+import { useState } from "react";
 import Link from "next/link";
 
 export default function App() {
+  const [url, setUrl] = useState("");
+
   return (
     <>
       <div id="global">
@@ -35,10 +40,30 @@ export default function App() {
             className="text-entry"
             type="text"
             placeholder="Enter URL"
+            value={url}
+            onChange={(text) => setUrl(text.target.value)}
           />
-          <div id="detect-btn" className="button">
+          <button
+            id="detect-btn"
+            className="button"
+            onClick={async () => {
+              console.log("test");
+              const response = await fetch("http://127.0.0.1:3001/submit", {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+                body: JSON.stringify({ input: url }),
+              });
+
+              // Handle the response
+              const result = await response.json();
+              console.log("Server response:", result);
+              alert("Server response: " + JSON.stringify(result));
+            }}
+          >
             Scan for Vulnerabilities
-          </div>
+          </button>
         </div>
 
         <div id="detected" className="text-block">
