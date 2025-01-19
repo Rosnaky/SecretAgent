@@ -8,6 +8,7 @@ from selenium.webdriver.chrome.options import Options
 import json
 
 def setUpDriver():
+    print("HU")
     chrome_driver_path = "chromedriver-win64\\chromedriver.exe"
     
     chrome_options = Options()
@@ -22,7 +23,6 @@ def setUpDriver():
 
 def listenToPage(url):
     driver.get(url)
-    print(driver.title)
 
 def process_browser_logs_for_network_events(logs):
     """
@@ -63,19 +63,20 @@ def printNetworkLogs(filename):
                     except Exception as e:
                         print(f"Error writing log: {e}")
     finally:
-        closeConnection()
+        # closeConnection()
+        pass
 
 
 # Set up the driver
-setUpDriver()
+# setUpDriver()
 
-# Open the page
-listenToPage(url="http://localhost:3000/")
+# # Open the page
+# listenToPage(url="http://localhost:3000/")
 
-while True:
-    s = time.time()
+# while True:
+#     s = time.time()
 
-    if time.time()-s < 7:
-        time.sleep(0.2)
+#     if time.time()-s < 7:
+#         time.sleep(0.2)
 
-    printNetworkLogs("./network_outputs.txt")
+#     printNetworkLogs("./network_outputs.txt")
