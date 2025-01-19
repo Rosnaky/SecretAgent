@@ -6,16 +6,12 @@ import time
 
 def sql_injection(base_url):
     # driver = webdriver.Firefox()
-    chrome_driver_path = "chromedriver-win64\\chromedriver.exe"
-    
     chrome_options = Options()
     chrome_options.add_argument("--auto-open-devtools-for-tabs")  
 
-    # Enable performance logging
     chrome_options.set_capability("goog:loggingPrefs", {"performance": "ALL"})
-    service = Service(chrome_driver_path)
     
-    driver = webdriver.Chrome(service=service, options=chrome_options)
+    driver = webdriver.Chrome(options=chrome_options)
 
     with open('utils/sqli.txt', 'r') as file:
         statements = [line.strip() for line in file.readlines()]
@@ -45,9 +41,13 @@ def sql_injection(base_url):
 
         login_button.click()
 
+        time.sleep(0.2)
+
         if driver.current_url != url:
             results.append(statement)
             driver.get(url)
+
+            time.sleep(0.2)
 
             email_input = driver.find_element("xpath", '//input[@id="email"]')
             password_input = driver.find_element("xpath", '//input[@id="password"]')
