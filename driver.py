@@ -9,6 +9,8 @@ Order of tasks
 
 from threading import Thread
 import time
+
+import requests
 import scraper
 import sys
 import brute_force
@@ -23,6 +25,7 @@ from threading import Event
 network_filename = "results/network_outputs.txt"
 client_code_filename = "results/client_code.txt"
 API_KEY = os.getenv("COHERE_API_KEY")
+api_url = "http://127.0.0.1:3001/api/tests"
 
 def init_cohere(api_key):
     cohere_api = CohereAPI(api_key=api_key, model="command-r-plus-08-2024")
@@ -89,8 +92,26 @@ def findSolutions(cohere_api: CohereAPI):
     prompt = f'Provide a list of remedies for these vulnerabilities. KEEP IT SHORT AND CONCISE. IF YOU HAVE NO SUGGESTIONS SAY NO CURRENT RECOMMENDATIONS VULNERABILITIES FOR FIXES'
     response = cohere_api.send_prompt(prompt=prompt)
 
-    with open("results/remedies.txt", "w") as f:
-        f.write(response)
+    # with open("results/remedies.txt", "w") as f:
+    #     f.write(response)
+
+    issues = ""
+    files = ["results/network_vulnerabilities.txt", "results/results_brute_force.txt", "results/results_directory_discovery.txt", "results/results_sql_injection.txt", "results/results_xss.txt"]
+
+    for fname in files:
+        with open(fname, "r") as f:
+            issues += f.read()
+
+    headers = {
+        "Content-Type": "application/json"
+    }
+
+    requests.patch(api_url, json={
+        "recommendations": response,
+        "issues": issues
+    },
+        headers=headers,
+    )
 
 def populateNetworkRAG(cohere_api: CohereAPI):
     with open("results/network_outputs.txt", 'r') as f:
