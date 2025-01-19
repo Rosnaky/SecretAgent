@@ -18,8 +18,10 @@ import directory_discovery
 from llm import CohereAPI
 from dotenv import load_dotenv
 import os
+from threading import Event
 
-filename = "results/network_outputs.txt"
+network_filename = "results/network_outputs.txt"
+client_code_filename = "results/client_code.txt"
 API_KEY = os.getenv("COHERE_API_KEY")
 
 def init_cohere(api_key):
@@ -38,17 +40,30 @@ def getUrl() -> str:
     else:
         return "Invalid link"
     
-def listenToNetwork(fname):
+def listenToNetwork(network_fname, client_code_fname, url, cohere_api):
+    open(network_fname, 'w').close()
+    open(client_code_fname, 'w').close()
     while True:
         s = time.time()
 
-        if time.time()-s < 7:
-            time.sleep(0.2)
+        # if time.time()-s < 10:
+        #     time.sleep(0.2)
+        Event().wait(10)
 
-        scraper.printNetworkLogs(fname)
+        with open(client_code_filename, "w", encoding="charmap", errors="replace") as f:
+            f.write(str(scraper.getClientCode()))
+        
+        scraper.print_network_logs_and_client_code(network_fname, client_code_fname, url)
+
+        llmParseNetworkRequests(cohere_api)
+
+        # time.sleep(3)
+
+        # llmParseClientCode(cohere_api)
+
         # llm_thread = Thread
 
-def populateRAG(cohere_api: CohereAPI):
+def populateNetworkRAG(cohere_api: CohereAPI):
     with open("results/network_outputs.txt", 'r') as f:
         network_outputs = f.read()
     with open("utils/network.txt", 'r') as f:
@@ -56,29 +71,56 @@ def populateRAG(cohere_api: CohereAPI):
         
     cohere_api.set_documents([
                                 {"title": "network_outputs", "snippet": network_outputs},
-                                {"title": "vulnerable_requests_examples", "snippet": vulnerable_requests_examples},
+                                # {"title": "vulnerable_requests_examples", "snippet": vulnerable_requests_examples},
                               ])
     
 
-def llmParse(cohere_api: CohereAPI):
-    populateRAG(cohere_api)
-    prompt = f"Generate a list of vulnerabilities by assessing the list of network requests provided and comparing them with common vulnerabilities. RETURN A SHORT DESCRIPTION OF THE VULNERABILITY AND THE RESPECTIVE NETWORK REQUEST. LOOK THROUGH ALL OF THE REQUESTS, PARTICULARLY THOSE WITH PASSWORDS AND CARD NUMBERS. MAKE SURE TO IDENTIFY VULNERABLE DATA BY REFERING TO EXAMPLES LABELLED WITH Security Vulnerability:"
+def llmParseNetworkRequests(cohere_api: CohereAPI):
+    populateNetworkRAG(cohere_api)
+    prompt = f"Generate a list of vulnerabilities by assessing the network requests. RETURN A SHORT DESCRIPTION OF THE VULNERABILITY AND THE RESPECTIVE NETWORK REQUEST IN THE FOLLOWING FORMAT: Sensitive Data Found (Password/CardNum/Social Security Number)=<info>. Give a list of vulnerabilities. MAKE SURE TO IDENTIFY VULNERABLE DATA ESPECIALLY PASSWORDS AND CARDS. LOOK THROUGH ALL OF THE REQUESTS. IF YOU ENCOUNTER ONE, DO NOT FORGET IT"
+    # return
     response = cohere_api.send_prompt(prompt=prompt)
 
-    with open("results/vulnerabilities", "w") as f:
+    with open("results/network_vulnerabilities.txt", "w") as f:
         f.write(str(response))
+
+def populateClientCodeRAG(cohere_api: CohereAPI):
+    with open("results/client_code.txt", 'r') as f:
+        client_code = f.read()
+    with open("utils/client_code.txt", 'r') as f:
+        vulnerable_client_code_examples = f.read()
+        
+    cohere_api.set_documents([
+                                {"title": "client_code", "snippet": client_code},
+                                {"title": "vulnerable_client_code_examples", "snippet": vulnerable_client_code_examples},
+                              ])
+
+def llmParseClientCode(cohere_api: CohereAPI):
+    populateClientCodeRAG(cohere_api)
+    prompt = f"Generate a list of vulnerabilities by assessing the HTML code provided and comparing them with common vulnerabilities. RETURN A SHORT DESCRIPTION OF THE VULNERABILITY AND THE RESPECTIVE CODE LINE IN THE FOLLOWING FORMAT: <Short description> <code line>. LOOK THROUGH ALL CODE, PARTICULARLY THOSE WITH API_KEYS. MAKE SURE TO IDENTIFY VULNERABLE DATA BY REFERING TO EXAMPLES LABELLED WITH Security Vulnerability:"
+
+    # return
+    response = cohere_api.send_prompt(prompt=prompt)
+
+    with open("results/code_vulnerabilities.txt", "w") as f:
+        f.write(str(response))
+
 
 # cohere_api = init_cohere(API_KEY)
 # llmParse(cohere_api)
 
-url = getUrl()
+# url = getUrl()
+url = "http://localhost:4000"
 
 if (url != "Invalid link"):
+    cohere_api = init_cohere(API_KEY)
+    init_selenium(url)
+
     sql_injection.sql_injection(url)
     xss.xss(url)
     brute_force.brute_force(url)
     directory_discovery.directory_discovery(url)
-    listenToNetwork(filename)
+    listenToNetwork(network_filename, client_code_filename, url, cohere_api)
 
 
 

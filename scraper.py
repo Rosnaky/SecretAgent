@@ -16,8 +16,19 @@ def setUpDriver():
     global driver
     driver = webdriver.Chrome(options=chrome_options)
 
+def getClientCode():
+    rendered_html = driver.page_source
+    return rendered_html
+
 def listenToPage(url):
     driver.get(url)
+
+# setUpDriver()
+# listenToPage("https://codelabs.developers.google.com/multimodal-rag-gemini#7")
+# with open("out.out", "w", encoding="charmap", errors="replace") as f:
+#     f.write(str(getClientCode()))
+
+
 
 def process_browser_logs_for_network_events(logs):
     """
@@ -42,12 +53,12 @@ def process_browser_logs_for_network_events(logs):
 def closeConnection():
     driver.quit()
 
-def printNetworkLogs(filename):
-    setUpDriver()
-    listenToPage("http://localhost:4000")
+def print_network_logs_and_client_code(network_filename, client_code_filename, url):
+    # setUpDriver()
+    # listenToPage(url)
+
     try:
-        with open(filename, 'w') as f:
-            while True:
+        with open(network_filename, 'a') as f:
                 logs = driver.get_log("performance")
                 events = process_browser_logs_for_network_events(logs)
                 for event in events:

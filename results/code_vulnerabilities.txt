@@ -1,0 +1,7 @@
+- Insecure Web Application OWASP Juice Shop HTML code
+- API Key example
+- External script with API key
+- XMLHttpRequest example
+- React inline script example
+- Vue.js API key example
+- Google Maps example

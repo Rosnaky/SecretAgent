@@ -1,0 +1,2 @@
+Sensitive Data Found password http://localhost:4000/rest/user/login
+Sensitive Data Found card http://localhost:4000/api/Cards/
