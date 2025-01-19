@@ -1,3 +1,4 @@
+import subprocess
 import flask
 from flask_cors import CORS
 
@@ -19,15 +20,17 @@ def site_app():
 @app.route("/submit", methods=["POST"])
 def submit():
     data = flask.request.json
-    input_text = data.get("input", "")
+
+    input_text = data['input']
+
     print(f"Received input: {input_text}")
 
-    # process = subprocess.run(
-    #     ["python", "driver.py", input_text],
-    #     stdout=subprocess.PIPE,
-    #     stderr=subprocess.PIPE,
-    #     text=True
-    # )
+    process = subprocess.run(
+        ["python", "driver.py", input_text],
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        text=True
+    )
 
     return flask.jsonify({"message": "Input received!", "input": input_text})
 

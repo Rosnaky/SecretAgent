@@ -8,18 +8,14 @@ from selenium.webdriver.chrome.options import Options
 import json
 
 def setUpDriver():
-    print("HU")
-    chrome_driver_path = "chromedriver-win64\\chromedriver.exe"
-    
     chrome_options = Options()
     chrome_options.add_argument("--auto-open-devtools-for-tabs")  
 
     # Enable performance logging
     chrome_options.set_capability("goog:loggingPrefs", {"performance": "ALL"})
-    service = Service(chrome_driver_path)
     
     global driver
-    driver = webdriver.Chrome(service=service, options=chrome_options)
+    driver = webdriver.Chrome(options=chrome_options)
 
 def listenToPage(url):
     driver.get(url)
