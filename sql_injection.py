@@ -31,7 +31,7 @@ def sql_injection(base_url):
     #for owasp
     dismiss_button = driver.find_element("xpath", "//button[contains(@class, 'close-dialog')]")
     if dismiss_button:
-        dismiss_button.click()
+        driver.execute_script("arguments[0].click();", dismiss_button)
 
     password_input.send_keys("password")
 
@@ -47,7 +47,7 @@ def sql_injection(base_url):
             results.append(statement)
             driver.get(url)
 
-            time.sleep(0.2)
+            time.sleep(0.5)
 
             email_input = driver.find_element("xpath", '//input[@id="email"]')
             password_input = driver.find_element("xpath", '//input[@id="password"]')

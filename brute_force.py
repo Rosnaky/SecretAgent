@@ -38,7 +38,7 @@ def brute_force(base_url):
         #for owasp
         dismiss_button = driver.find_element("xpath", "//button[contains(@class, 'close-dialog')]")
         if dismiss_button:
-            dismiss_button.click()
+            driver.execute_script("arguments[0].click();", dismiss_button)
 
         for username in usernames:
             for password in passwords:
