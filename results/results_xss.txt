@@ -1,4 +1,25 @@
-Successful XSS Attacks
-:'><img src=x onerror=alert('XSS')>
-<iframe src="javascript:alert('XSS')"></iframe>
-"><iframe src="javascript:alert('XSS')"></iframe>
+Alert Text: XSS
+Message: unexpected alert open: {Alert text : XSS}
+  (Session info: chrome=132.0.6834.84)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7B92AFBE5+28741]
+	(No symbol) [0x00007FF7B9217890]
+	(No symbol) [0x00007FF7B90B4FDA]
+	(No symbol) [0x00007FF7B90C45F7]
+	(No symbol) [0x00007FF7B90CAADA]
+	(No symbol) [0x00007FF7B90A1C84]
+	(No symbol) [0x00007FF7B90C3E4A]
+	(No symbol) [0x00007FF7B914FF96]
+	(No symbol) [0x00007FF7B912FCB3]
+	(No symbol) [0x00007FF7B90F9FB3]
+	(No symbol) [0x00007FF7B90FB331]
+	GetHandleVerifier [0x00007FF7B95EA73D+3414941]
+	GetHandleVerifier [0x00007FF7B95FE64A+3496618]
+	GetHandleVerifier [0x00007FF7B95F413D+3454365]
+	GetHandleVerifier [0x00007FF7B937848B+850155]
+	(No symbol) [0x00007FF7B92237FF]
+	(No symbol) [0x00007FF7B921F0C4]
+	(No symbol) [0x00007FF7B921F25D]
+	(No symbol) [0x00007FF7B920E079]
+	BaseThreadInitThunk [0x00007FFD2F7C259D+29]
+	RtlUserThreadStart [0x00007FFD2FD2AF38+40]

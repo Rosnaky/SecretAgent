@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPause, faPlay, faCheck, faCircleXmark} from '@fortawesome/free-solid-svg-icons';
+import GetRequestExample from "./patch";
 
 interface StatusItem {
   id: number;
@@ -159,6 +160,10 @@ export default function App() {
               </tr>
             </tbody>
           </table>
+        </div>
+
+        <div>
+            <GetRequestExample/>s
         </div>
 
         <div id="footer">
