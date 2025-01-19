@@ -7,16 +7,14 @@ from selenium.webdriver.chrome.options import Options
 
 def brute_force(base_url):
     # driver = webdriver.Firefox()
-    chrome_driver_path = "chromedriver-win64/chromedriver.exe"
     
     chrome_options = Options()
     chrome_options.add_argument("--auto-open-devtools-for-tabs")  
 
     # Enable performance logging
     chrome_options.set_capability("goog:loggingPrefs", {"performance": "ALL"})
-    service = Service(chrome_driver_path)
     
-    driver = webdriver.Chrome(service=service, options=chrome_options)
+    driver = webdriver.Chrome(options=chrome_options)
 
     with open('utils/usernames.txt', 'r') as file:
         usernames = [line.strip() for line in file.readlines()]

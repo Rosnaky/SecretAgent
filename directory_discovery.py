@@ -1,13 +1,18 @@
 from selenium import webdriver
 from selenium.common.exceptions import WebDriverException
 import requests
-import time
+from selenium.webdriver.chrome.options import Options
 
 def directory_discovery(base_url):
     with open('utils/common.txt', 'r') as file:
         file_paths = [line.strip() for line in file.readlines()]
 
-    driver = webdriver.Firefox()
+    chrome_options = Options()
+    chrome_options.add_argument("--auto-open-devtools-for-tabs")  
+
+    chrome_options.set_capability("goog:loggingPrefs", {"performance": "ALL"})
+    
+    driver = webdriver.Chrome(options=chrome_options)
 
     results = []
 
@@ -34,4 +39,4 @@ def directory_discovery(base_url):
                 result_file.write(f"{path}\n")
 
 
-directory_discovery("http://localhost:3000")
+#directory_discovery("http://localhost:3000")
