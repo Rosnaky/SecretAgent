@@ -15,8 +15,17 @@ import brute_force
 import sql_injection
 import xss
 import directory_discovery
+from llm import CohereAPI
+from dotenv import load_dotenv
+import os
 
 filename = "results/network_outputs.txt"
+API_KEY = os.getenv("COHERE_API_KEY")
+
+def init_cohere(api_key):
+    cohere_api = CohereAPI(api_key=api_key, model="command-r-plus-08-2024")
+    return cohere_api
+
 
 def init_selenium(url):
     scraper.setUpDriver()
@@ -30,7 +39,6 @@ def getUrl() -> str:
         return "Invalid link"
     
 def listenToNetwork(fname):
-
     while True:
         s = time.time()
 
@@ -38,7 +46,30 @@ def listenToNetwork(fname):
             time.sleep(0.2)
 
         scraper.printNetworkLogs(fname)
+        # llm_thread = Thread
+
+def populateRAG(cohere_api: CohereAPI):
+    with open("results/network_outputs.txt", 'r') as f:
+        network_outputs = f.read()
+    with open("utils/network.txt", 'r') as f:
+        vulnerable_requests_examples = f.read()
         
+    cohere_api.set_documents([
+                                {"title": "network_outputs", "snippet": network_outputs},
+                                {"title": "vulnerable_requests_examples", "snippet": vulnerable_requests_examples},
+                              ])
+    
+
+def llmParse(cohere_api: CohereAPI):
+    populateRAG(cohere_api)
+    prompt = f"Generate a list of vulnerabilities by assessing the list of network requests provided and comparing them with common vulnerabilities. RETURN A SHORT DESCRIPTION OF THE VULNERABILITY AND THE RESPECTIVE NETWORK REQUEST. LOOK THROUGH ALL OF THE REQUESTS, PARTICULARLY THOSE WITH PASSWORDS AND CARD NUMBERS. MAKE SURE TO IDENTIFY VULNERABLE DATA BY REFERING TO EXAMPLES LABELLED WITH Security Vulnerability:"
+    response = cohere_api.send_prompt(prompt=prompt)
+
+    with open("results/vulnerabilities", "w") as f:
+        f.write(str(response))
+
+# cohere_api = init_cohere(API_KEY)
+# llmParse(cohere_api)
 
 url = getUrl()
 
@@ -48,6 +79,8 @@ if (url != "Invalid link"):
     brute_force.brute_force(url)
     directory_discovery.directory_discovery(url)
     listenToNetwork(filename)
+
+
 
     # sql_injection_thread = Thread(target=sql_injection.sql_injection, args=[url])
     # sql_injection_thread.start()
