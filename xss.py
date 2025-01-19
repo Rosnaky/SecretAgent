@@ -30,7 +30,7 @@ def xss(base_url):
 
         dismiss_button = driver.find_element("xpath", "//button[contains(@class, 'close-dialog')]")
         if dismiss_button:
-            dismiss_button.click()
+            driver.execute_script("arguments[0].click();", dismiss_button)
 
         search_input = driver.find_element("xpath", '//input[@type="search" or @type="text"]')
 
