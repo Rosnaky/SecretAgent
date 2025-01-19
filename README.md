@@ -1,4 +1,4 @@
-## Secret Agent
+# CyberAgent
 
 #### Installation
 ```
@@ -8,7 +8,7 @@ pip install selenium-wire
 
 ## Motivation
 
-SecretAgent aims to create an AI-powered cybersecurity developer tool to identify security vulnerabilities.
+CyberAgent aims to create an AI-powered cybersecurity developer tool to identify security vulnerabilities.
 
 ## Description
 
