@@ -11,7 +11,6 @@ def setUpDriver():
     chrome_options = Options()
     chrome_options.add_argument("--auto-open-devtools-for-tabs")  
 
-    # Enable performance logging
     chrome_options.set_capability("goog:loggingPrefs", {"performance": "ALL"})
     
     global driver
@@ -44,6 +43,8 @@ def closeConnection():
     driver.quit()
 
 def printNetworkLogs(filename):
+    setUpDriver()
+    listenToPage("http://localhost:3000")
     try:
         with open(filename, 'w') as f:
             while True:
