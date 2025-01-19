@@ -1,0 +1,10 @@
+Exposed directories
+:ftp
+robots.txt
+wp-admin
+api
+.htpasswd
+orders
+api/v1
+api/v2
+api/v3
