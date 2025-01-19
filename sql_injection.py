@@ -2,9 +2,19 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
+import requests
 import time
 
 def sql_injection(base_url):
+
+    api_url = "http://127.0.0.1:3001/api/tests/1"
+
+    headers = {
+        "Content-Type": "application/json"
+    }
+
+    requests.patch(api_url, json={"status": "In Progress"}, headers=headers)
+    
     # driver = webdriver.Firefox()
     chrome_options = Options()
     chrome_options.add_argument("--auto-open-devtools-for-tabs")  
@@ -54,11 +64,8 @@ def sql_injection(base_url):
             login_button = driver.find_element("xpath", '//button[@id="loginButton"]')
             password_input.send_keys("password")
 
-    with open('results/results_sql_injection.txt', 'w') as result_file:
-        if len(results) > 0:
-            result_file.write("Successful SQL Injection Queries\n:")
-            for statement in results:
-                result_file.write(f"{statement}\n")
+    requests.patch(api_url, json={"status": "Complete"}, headers=headers)
+    requests.patch(api_url, json={"raw_data" : results}, headers=headers)
 
     driver.quit()
 

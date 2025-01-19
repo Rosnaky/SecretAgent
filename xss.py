@@ -1,4 +1,5 @@
 from selenium import webdriver
+import requests
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
@@ -6,6 +7,15 @@ from selenium.webdriver.chrome.options import Options
 import time
 
 def xss(base_url):
+
+    api_url = "http://127.0.0.1:3001/api/tests/2"
+
+    headers = {
+        "Content-Type": "application/json"
+    }
+
+    requests.patch(api_url, json={"status": "In Progress"}, headers=headers)
+
     # driver = webdriver.Firefox()
     
     chrome_options = Options()
@@ -58,11 +68,14 @@ def xss(base_url):
             driver.get(base_url)
             search_input = driver.find_element("xpath", '//input[@type="search" or @type="text"]')
 
-        with open('results/results_xss.txt', 'w') as result_file:
-            if len(results) > 0:
-                result_file.write("Successful XSS Attacks\n:")
-                for statement in results:
-                    result_file.write(f"{statement}\n")
+        # with open('results/results_xss.txt', 'w') as result_file:
+        #     if len(results) > 0:
+        #         result_file.write("Successful XSS Attacks\n:")
+        #         for statement in results:
+        #             result_file.write(f"{statement}\n")
+        
+        requests.patch(api_url, json={"status": "Complete"}, headers=headers)
+        requests.patch(api_url, json={"raw_data" : results}, headers=headers)
     except Exception as e:
         with open('results/results_xss.txt', 'w') as result_file:
             result_file.write(f"{e}")

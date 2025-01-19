@@ -7,14 +7,4 @@ test
 demo  
 support  
 sysadmin  
-manager  
-owner  
-developer  
-info  
-webmaster  
-moderator  
-operator  
-service  
-superuser  
-security  
-staff
+manager

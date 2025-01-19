@@ -2,23 +2,51 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPause, faPlay, faCheck, faCircleXmark} from '@fortawesome/free-solid-svg-icons';
+
+interface StatusItem {
+  id: number;
+  status: string;
+}
 
 export default function App() {
   const [url, setUrl] = useState("");
-  const [progresses, setProgresses] = useState(["", "", "", ""]);
-  const [fixes, setFixes] = useState(["", "", "", ""]);
+  const [statuses, setStatuses] = useState<StatusItem[]>([
+    { id: 1, status: 'Pending' },
+    { id: 2, status: 'Pending' },
+    { id: 3, status: 'Pending' },
+    { id: 4, status: 'Pending' },
+    { id: 5, status: 'Pending' },
+  ]);
+
+  const apiEndpoint = "http://127.0.0.1:3001/api/tests"
+
+  const fetchStatuses = async () => {
+    try {
+      const response = await fetch(apiEndpoint);
+      if (!response.ok) {
+        throw new Error(`Error: ${response.statusText}`);
+      }
+      const test_data = await response.json();
+      const updatedStatuses: StatusItem[] = test_data.tests
+      setStatuses((prevStatuses) =>
+        prevStatuses.map((item) => ({
+          ...item,
+          status: updatedStatuses.find((u) => u.id === item.id)?.status || item.status,
+        }))
+      );
+      console.log(statuses);
+    } catch (error) {
+      console.error('Error fetching statuses:', error);
+    }
+  };
 
   useEffect(() => {
-    const interval = setInterval(async () => {
-      const response = await fetch("http://127.0.0.1:3001/status");
-      const result = await response.json();
-      setProgresses(result.filter((x: { status: string }) => x.status));
-      setFixes(
-        result.filter((x: { recommendations: string }) => x.recommendations)
-      );
-    }, 500);
-
-    return () => clearInterval(interval);
+    const interval = setInterval(() => {
+      fetchStatuses();
+    }, 1000); // Polling every 5 seconds
+    return () => clearInterval(interval); // Cleanup on component unmount
   }, []);
 
   return (
@@ -43,13 +71,8 @@ export default function App() {
       </div>
 
       <div id="main">
-        <div id="about" className="text-block">
-          <h2>About CyberAgent</h2>
-          <p>yes</p>
-        </div>
-
-        <div id="detect" className="text-block">
-          <h2>Detect</h2>
+        <h2 className="text-center p-4">Detect</h2>
+        <div id="detect" className="flex justify-center items-center space-x-4">
           <input
             id="detect-url"
             className="text-entry"
@@ -70,80 +93,71 @@ export default function App() {
                 },
                 body: JSON.stringify({ input: url }),
               });
-
-              // Handle the response
-              const result = await response.json();
-              console.log("Server response:", result);
-              alert("Server response: " + JSON.stringify(result));
             }}
           >
             Scan for Vulnerabilities
           </button>
         </div>
-
         <div id="detected" className="text-block">
-          <h2>Detected Vulnerabilities</h2>
-          <p id="detected-status">Scanning... (x%)</p>
+          <h2 className="text-center pb-4">Tests</h2>
           <table>
-            <tr>
-              <th>#</th>
-              <th>Issue</th>
-              <th>Description</th>
-              <th>Recommended Fix</th>
-              <th>Progress</th>
-            </tr>
-            <tr>
-              <td className="td-right">1</td>
-              <td>SQL Injection</td>
-              <td>
-                In computing, SQL injection is a code injection technique used
-                to attack data-driven applications, in which malicious SQL
-                statements are inserted into an entry field for execution (e.g.
-                to dump the database contents to the attacker). SQL injection
-                must exploit a security vulnerability in an application's
-                software, for example, when user input is either incorrectly
-                filtered for string literal escape characters embedded in SQL
-                statements or user input is not strongly typed and unexpectedly
-                executed.
-              </td>
-              <td>{fixes[0]}</td>
-              <td>{progresses[0]}</td>
-            </tr>
-            <tr>
-              <td className="td-right">2</td>
-              <td>Cross-site Scripting (XSS)</td>
-              <td>
-                Cross-Site Scripting (XSS) attacks are a type of injection, in
-                which malicious scripts are injected into otherwise benign and
-                trusted websites. XSS attacks occur when an attacker uses a web
-                application to send malicious code, generally in the form of a
-                browser side script, to a different end user.
-              </td>
-              <td>{fixes[1]}</td>
-              <td>{progresses[1]}</td>
-            </tr>
-            <tr>
-              <td className="td-right">1</td>
-              <td>Brute-force attack</td>
-              <td>
-                A brute-force attack consists of an attacker submitting many
-                passwords or passphrases with the hope of eventually guessing
-                correctly.
-              </td>
-              <td>{fixes[2]}</td>
-              <td>{progresses[2]}</td>
-            </tr>
-            <tr>
-              <td className="td-right">1</td>
-              <td>Exposed Directories</td>
-              <td>
-                An exposed directories vulnerability is a security flaw in a web
-                server that allows unauthorized users to view the contents of
-                directories on a website.
-              </td>
-              <td>{fixes[3]}</td>
-              <td>{progresses[3]}</td>
-            </tr>
+            <thead>
+              <tr className="font-bold">
+                <th className="w-1/6">#</th>
+                <th className="w-1/5">Test</th>
+                <th className="w-1/4">Description</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="td-right">1</td>
+                <td>SQL Injection</td>
+                <td className="text-sm">SQL injection is a security vulnerability that occurs when an attacker 
+                  manipulates a web application's SQL query by injecting malicious input. </td>
+                <td className="text-center">
+                  {statuses[1].status == "Pending" && <FontAwesomeIcon icon={faPlay} />}
+                  {statuses[1].status == "In Progress" && <FontAwesomeIcon icon={faPause} />}
+                  {statuses[1].status == "Completed" && <FontAwesomeIcon icon={faCheck} />}
+                </td>
+              </tr>
+              <tr>
+                <td className="td-right">2</td>
+                <td>Cross-Site Scripting</td>
+                <td className="text-sm">Cross-Site Scripting (XSS) is a security vulnerability where an attacker injects 
+                  malicious scripts into a web application, which are executed in the user's browser.</td>
+                <td className="text-center">
+                  <FontAwesomeIcon icon={faPlay} />
+                </td>
+              </tr>
+              <tr>
+                <td className="td-right">3</td>
+                <td>Brute Force Attacks</td>
+                <td className="text-sm">Brute force attacks are a trial-and-error method used by attackers to guess credentials, 
+                  encryption keys, or other secrets by systematically trying all possible combinations.</td>
+                <td className="text-center">
+                  <FontAwesomeIcon icon={faPlay} />
+                </td>
+              </tr>
+              <tr>
+                <td className="td-right">4</td>
+                <td>Directory Exposure</td>
+                <td className="text-sm">Directory exposure occurs when a web server inadvertently allows users to view directory 
+                  contents or access files not intended for public visibility.</td>
+                <td className="text-center">
+                <FontAwesomeIcon icon={faPlay} />
+                </td>
+              </tr>
+              <tr>
+                <td className="td-right">5</td>
+                <td>Network Request Exposure</td>
+                <td className="text-sm">Network request exposure occurs when sensitive data, such as API keys, tokens, or user credentials,
+                  is included in unencrypted or poorly secured network requests. </td>
+                <td className="text-center">
+                  <FontAwesomeIcon icon={faPlay} />
+                </td>
+              </tr>
+            </tbody>
           </table>
         </div>
 

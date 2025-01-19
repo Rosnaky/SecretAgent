@@ -4,6 +4,15 @@ import requests
 from selenium.webdriver.chrome.options import Options
 
 def directory_discovery(base_url):
+
+    api_url = "http://127.0.0.1:3001/api/tests/4"
+
+    headers = {
+        "Content-Type": "application/json"
+    }
+
+    requests.patch(api_url, json={"status": "In Progress"}, headers=headers)
+
     with open('utils/common.txt', 'r') as file:
         file_paths = [line.strip() for line in file.readlines()]
 
@@ -32,11 +41,14 @@ def directory_discovery(base_url):
 
     driver.quit()
 
-    with open('results/results_directory_discovery.txt', 'w') as result_file:
-        if len(results) > 0:
-            result_file.write("Exposed directories\n:")
-            for path in results:
-                result_file.write(f"{path}\n")
+    # with open('results/results_directory_discovery.txt', 'w') as result_file:
+    #     if len(results) > 0:
+    #         result_file.write("Exposed directories\n:")
+    #         for path in results:
+    #             result_file.write(f"{path}\n")
+
+    requests.patch(api_url, json={"status": "Complete"}, headers=headers)
+    requests.patch(api_url, json={"raw_data" : results}, headers=headers)
 
 
 #directory_discovery("http://localhost:3000")
