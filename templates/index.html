@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>CyberAgent</title>
+        <link rel="stylesheet" href="../static/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <style>
+            /*front image*/
+            #front-image {
+                position: relative;
+                width: 100vw; height: 50vw;
+                overflow: hidden;
+                background-image: url("../static/images/title.png");
+                background-size: 100%; background-position: center; background-attachment: fixed;
+            }
+            #front-screen {
+                position: absolute;
+                width: 100%; height: 100%;
+                background-image: linear-gradient(to bottom, rgb(25, 25, 25, 1) 0%, rgb(25, 25, 25, 0.25) 25%, rgb(25, 25, 25, 0) 50%, rgb(25, 25, 25, 0.125) 75%, rgb(25, 25, 25, 0.5) 100%);
+            }
+            #title-holder {
+                position: absolute;
+                top: 40vh; left: 30%; transform: translate(-50%, -50%);
+            }
+            #title {
+                font-weight: normal;
+                font-size: 50px;
+                margin-bottom: 20px;
+            }
+            #title-desc {
+                font-weight: normal;
+                font-weight: 30px;
+                margin-top: 20px; margin-bottom: 50px;
+            }
+            #title-btn {
+                padding: 15px 15px 15px 15px;
+                font-size: 18px;
+            }
+        </style>
+
+        <!--header scripts-->
+    </head>
+
+    <body>
+        <!--global-->
+        <div id="global">
+            <div id="top-bar">
+                <a id="top-bar-logo" href="index.html">CyberAgent</a>
+                <div id="top-bar-nav">
+                    <div id="nav-expand">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <a class="top-bar-btn" id="top-bar-home" href="index.html">About</a>
+                    <a class="top-bar-btn" id="top-bar-about" href="app.html">App</a>
+                </div>
+            </div>
+        </div>
+
+        <!--main-->
+        <div id="main">
+            <!--title-->
+            <div id="front-image">
+                <div id="front-screen"></div>
+                <div id="title-holder">
+                    <h1 id="title">CyberAgent</h1>
+                    <h2 id="title-desc">
+                        AI-Powered Vulnerability Detection
+                    </h2>
+                    <a id="title-btn" class="button" href="app.html">Get Started ></a>
+                </div>
+            </div>
+
+            <!--about-->
+            <div id="about" class="text-block">
+                <h2>About CyberAgent</h2>
+                <p>
+                    CyberAgent is an AI-powered security developer tool that detects back-end vulnerabilities.
+                </p>
+            </div>
+
+            <!--footer-->
+            <div id="footer">
+                <hr>
+                <div class="footer-block">
+                    <p>
+                        <b>CyberAgent</b>
+                    </p>
+                    <p>
+                        <a class="link" target="_blank" href="index.html">
+                            About
+                        </a><br>
+                        <a class="link" target="_blank" href="app.html">
+                            App
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!--scripts-->
+    </body>
+</html>
