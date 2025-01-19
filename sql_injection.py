@@ -60,6 +60,8 @@ def sql_injection(base_url):
             for statement in results:
                 result_file.write(f"{statement}\n")
 
+    driver.quit()
+
 # sql_injection("http://localhost:3000")
 
 

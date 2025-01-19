@@ -62,4 +62,6 @@ def brute_force(base_url):
         with open("results/error.txt", 'w') as f:
             f.write("dsnj")
 
+    driver.quit()
+
 # brute_force("https://localhost:3002")
