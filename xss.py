@@ -46,7 +46,7 @@ def xss(base_url):
                 arguments[0].dispatchEvent(new KeyboardEvent('keyup', {'key': 'Enter'}));
             """, search_input)
 
-            time.sleep(0.5)
+            time.sleep(0.2)
 
             try:
                 alert = driver.switch_to.alert
@@ -66,5 +66,7 @@ def xss(base_url):
     except Exception as e:
         with open('results/results_xss.txt', 'w') as result_file:
             result_file.write(f"{e}")
+    
+    driver.quit()
 
 # xss("http://localhost:3000")
