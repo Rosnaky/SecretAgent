@@ -68,17 +68,17 @@ def llmParse(cohere_api: CohereAPI):
     with open("results/vulnerabilities", "w") as f:
         f.write(str(response))
 
-cohere_api = init_cohere(API_KEY)
-llmParse(cohere_api)
+# cohere_api = init_cohere(API_KEY)
+# llmParse(cohere_api)
 
-# url = getUrl()
+url = getUrl()
 
-# if (url != "Invalid link"):
-#     sql_injection.sql_injection(url)
-#     xss.xss(url)
-#     brute_force.brute_force(url)
-#     directory_discovery.directory_discovery(url)
-#     listenToNetwork(filename)
+if (url != "Invalid link"):
+    sql_injection.sql_injection(url)
+    xss.xss(url)
+    brute_force.brute_force(url)
+    directory_discovery.directory_discovery(url)
+    listenToNetwork(filename)
 
 
 
