@@ -21,7 +21,8 @@ def site_app():
 def submit():
     data = flask.request.json
 
-    input_text = data['input']
+
+    input_text = data.get("input", "")
 
     print(f"Received input: {input_text}")
 
