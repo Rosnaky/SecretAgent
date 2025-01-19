@@ -41,11 +41,11 @@ def directory_discovery(base_url):
 
     driver.quit()
 
-    # with open('results/results_directory_discovery.txt', 'w') as result_file:
-    #     if len(results) > 0:
-    #         result_file.write("Exposed directories\n:")
-    #         for path in results:
-    #             result_file.write(f"{path}\n")
+    with open('results/results_directory_discovery.txt', 'w') as result_file:
+        if len(results) > 0:
+            result_file.write("Exposed directories\n:")
+            for path in results:
+                result_file.write(f"{path}\n")
 
     requests.patch(api_url, json={"status": "Complete"}, headers=headers)
     requests.patch(api_url, json={"raw_data" : results}, headers=headers)

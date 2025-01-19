@@ -89,7 +89,8 @@ def findSolutions(cohere_api: CohereAPI):
                                 {"title": "xss", "snippet": c5},
                                 # {"title": "vulnerable_requests_examples", "snippet": vulnerable_requests_examples},
                               ])
-    prompt = f'Provide a list of remedies for these vulnerabilities. KEEP IT SHORT AND CONCISE. IF YOU HAVE NO SUGGESTIONS SAY NO CURRENT RECOMMENDATIONS VULNERABILITIES FOR FIXES'
+    prompt = f'Provide a list of remedies for these vulnerabilities. KEEP IT SHORT AND CONCISE. IF YOU HAVE NO SUGGESTIONS SAY GENERIC ADVICE SUCH AS PREVENT SQL INJECTION'
+    time.sleep(1)
     response = cohere_api.send_prompt(prompt=prompt)
 
     with open("results/remedies.txt", "w") as f:

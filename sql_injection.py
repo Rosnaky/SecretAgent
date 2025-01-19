@@ -64,6 +64,12 @@ def sql_injection(base_url):
             login_button = driver.find_element("xpath", '//button[@id="loginButton"]')
             password_input.send_keys("password")
 
+    with open('results/results_sql_injection.txt', 'w') as result_file:
+        if len(results) > 0:
+            result_file.write("Exposed directories\n:")
+            for path in results:
+                result_file.write(f"{path}\n")
+
     requests.patch(api_url, json={"status": "Complete"}, headers=headers)
     requests.patch(api_url, json={"raw_data" : results}, headers=headers)
 

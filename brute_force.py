@@ -62,10 +62,10 @@ def brute_force(base_url):
                     results.append((username, password))
                     driver.get(url)
 
-        # with open('results/results_brute_force.txt', 'w') as result_file:
-        #     result_file.write("Potential vulnerabilities\n:")
-        #     for username, password in results:
-        #         result_file.write(f"USERNAME: {username}, PASSWORD: {password}\n")
+        with open('results/results_brute_force.txt', 'w') as result_file:
+            result_file.write("Potential vulnerabilities\n:")
+            for username, password in results:
+                result_file.write(f"USERNAME: {username}, PASSWORD: {password}\n")
         
        
         requests.patch(api_url, json={"status": "Complete"}, headers=headers)

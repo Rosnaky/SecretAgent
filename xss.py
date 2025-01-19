@@ -56,7 +56,7 @@ def xss(base_url):
                 arguments[0].dispatchEvent(new KeyboardEvent('keyup', {'key': 'Enter'}));
             """, search_input)
 
-            time.sleep(0.2)
+            time.sleep(0.5)
 
             try:
                 alert = driver.switch_to.alert
@@ -68,11 +68,11 @@ def xss(base_url):
             driver.get(base_url)
             search_input = driver.find_element("xpath", '//input[@type="search" or @type="text"]')
 
-        # with open('results/results_xss.txt', 'w') as result_file:
-        #     if len(results) > 0:
-        #         result_file.write("Successful XSS Attacks\n:")
-        #         for statement in results:
-        #             result_file.write(f"{statement}\n")
+        with open('results/results_xss.txt', 'w') as result_file:
+            if len(results) > 0:
+                result_file.write("Successful XSS Attacks\n:")
+                for statement in results:
+                    result_file.write(f"{statement}\n")
         
         requests.patch(api_url, json={"status": "Complete"}, headers=headers)
         requests.patch(api_url, json={"raw_data" : results}, headers=headers)

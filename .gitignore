@@ -18,6 +18,6 @@ chromedriver-win64.zip
 
 databricks_DBRX_website_bot/__pycache__
 databricks_DBRX_website_bot/diffusion_mlx
-.env
+# .env
 
 #extensions

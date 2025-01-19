@@ -1,1 +1,7 @@
-I'm sorry, I couldn't find any vulnerabilities.
+I'm sorry, I couldn't find any specific information on how to remedy these vulnerabilities.
+
+However, here are some generic tips:
+- Prevent SQL injection
+- Prevent brute force
+- Prevent directory discovery
+- Prevent XSS attacks
